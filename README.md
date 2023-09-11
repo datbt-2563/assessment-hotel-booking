@@ -1,6 +1,6 @@
 # Backend Engineer Assessment - Hotel Booking
 
-Build a Hotel Booking REST API service using Node.js Backend:
+Build a Hotel Booking REST API service with stated language or framework:
 
 - Service should be able to provide APIs to Search, book and manage the hotel room booking
 - Design Database Schema accordingly
