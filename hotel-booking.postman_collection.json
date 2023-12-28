@@ -1,0 +1,178 @@
+{
+	"info": {
+		"_postman_id": "610bf918-cdeb-42be-92ae-79266be165c6",
+		"name": "hotel-booking",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8186790"
+	},
+	"item": [
+		{
+			"name": "customer",
+			"item": [
+				{
+					"name": "Create new customer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Name\": \"User A\",\r\n    \"PhoneNumber\": \"012345679\",\r\n    \"Email\": \"bui.thanh.dat@sun-asterisk.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8020/customer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8020",
+							"path": [
+								"customer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a customer",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Name\": \"User A\",\r\n    \"PhoneNumber\": \"012345679\",\r\n    \"Email\": \"bui.thanh.dat@sun-asterisk.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8020/customer/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8020",
+							"path": [
+								"customer",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete customer",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Name\": \"User A\",\r\n    \"PhoneNumber\": \"012345679\",\r\n    \"Email\": \"bui.thanh.dat@sun-asterisk.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8020/customer/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8020",
+							"path": [
+								"customer",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search by name",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Name\": \"User A\",\r\n    \"PhoneNumber\": \"012345679\",\r\n    \"Email\": \"bui.thanh.dat@sun-asterisk.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8020/customer-name?name=A",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8020",
+							"path": [
+								"customer-name"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "A"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search by phone",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Name\": \"User A\",\r\n    \"PhoneNumber\": \"012345679\",\r\n    \"Email\": \"bui.thanh.dat@sun-asterisk.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8020/customer-phone?phone=123",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8020",
+							"path": [
+								"customer-phone"
+							],
+							"query": [
+								{
+									"key": "phone",
+									"value": "123"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
